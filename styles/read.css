@@ -119,31 +119,39 @@ main h1 {
 }
 
 /* COURSE BUTTONS */
-#courses {
-    list-style: none;
-
+.buttons {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-
     gap: 1rem;
-
     padding: 1rem;
 
     /*background: white;*/
 }
 
-#courses li {
-    background: #ddd;
+.buttons  {
+    background: grey;
     text-align: center;
-    padding: 0.7rem;
+    padding: 0.1rem;
     border-radius: 5px;
     font-weight: bold;
-}
-
-#courses a {
     text-decoration: none;
     color: black;
 }
+
+#courses {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.course-card {
+    background-color: white;
+    padding: 1rem;
+    border-radius: 8px;
+    text-align: center;
+}
+
 
 /* SOCIAL MEDIA */
 .socialmedia {
