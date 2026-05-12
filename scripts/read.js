@@ -34,7 +34,7 @@ const courses = [
             'HTML',
             'CSS'
         ],
-        completed: false
+        completed: true
     },
     {
         subject: 'CSE',
@@ -46,7 +46,7 @@ const courses = [
         technology: [
             'Python'
         ],
-        completed: false
+        completed: true
     },
     {
         subject: 'CSE',
@@ -72,7 +72,7 @@ const courses = [
             'CSS',
             'JavaScript'
         ],
-        completed: false
+        completed: true
     },
     {
         subject: 'WDD',
@@ -123,11 +123,19 @@ function displayCourses(courseList) {
             <h3>${course.subject} ${course.number}</h3>
             <p>${course.title}</p>
             <p>${course.credits} Credits</p>
+            <p>${course.completed ? 'Completed' : 'In Progress'}</p>
+            
         `;
 
         // Add card to page
         coursesContainer.appendChild(courseCard);
     });
+
+    // Update credit total
+    const totalCredits = courseList.reduce((sum, course) => sum + course.credits, 0);
+    document.getElementById("credit-total").textContent = `Total Credits: ${totalCredits}`;
+
+
 }
 
 

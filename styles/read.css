@@ -118,6 +118,11 @@ main h1 {
     background-color: grey;
 }
 
+.skills p {
+    padding: 1rem;
+    text-align: center;
+}
+
 /* COURSE BUTTONS */
 .buttons {
     display: grid;
@@ -145,7 +150,6 @@ main h1 {
     border-radius: 8px;
     text-align: center;
 }
-
 
 /* SOCIAL MEDIA */
 .socialmedia {
