@@ -49,14 +49,14 @@ h2 {
 }
 
 .profile  {
-    background-color: grey;
-    color: white;
+    background-color: lightgrey;
+    color: black;
     margin-top: 1rem;
 }
 
 .photo {
-     background-color: grey;
-    color: white;
+     background-color: lightgrey;
+    color: black;
     margin-top: 1rem;
 }
 
@@ -70,8 +70,8 @@ h2 {
 }
 
 .skills {
-    background-color:gray;
-    color: white;
+    background-color:lightgray;
+    color: black;
     margin-top: 1rem;
 }
 .welcome {
