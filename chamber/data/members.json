@@ -1,0 +1,53 @@
+{
+"companies": [
+    { "company name": "IDWEB",
+        "image": "images/pexels-daniel-reynaga-337914704-28184184.jpg                                           ",
+        "address": "123 Main Street, Texas, USA",
+        "phone": "(555) 123-4567",
+        "URL": "https://www.idweb.com",
+        "membership level": "2=silver"
+    },
+    { "company name": "SURGE",
+        "image": "images/pexels-anderson-wei-2151965849-37370590.jpg",
+        "address": "123 Main Street, Arizona, USA",
+        "phone": "(555) 456-4567",
+        "URL": "https://www.surge.com",
+        "membership level": "3=gold"
+    },
+    { "company name": "GREEN TECH",
+        "image": "images/pexels-christian-nzayisenga-2160342483-36653828.jpg",
+        "address": "123 Main Street, Colorado, USA",
+        "phone": "(555) 789-4567",
+        "URL": "https://www.greentech.com",
+        "membership level": "1=member"
+    },
+    { "company name": "GRAPHIC DES",
+        "image": "images/pexels-abdullatif-bukeni-1296376-35238175.jpg",
+        "address": "123 Main Street, Washington, USA",
+        "phone": "(555) 321-4567",
+        "URL": "https://www.graphicdes.com",
+        "membership level": "2=silver"
+    },
+    { "company name": "ZINCO",
+        "image": "images/pexels-enes-haciabbasoglu-339533634-31523276.jpg",
+        "address": "123 Main Street, California, USA",
+        "phone": "(555) 654-4567",
+        "URL": "https://www.zinco.com",
+        "membership level": "3=gold"
+    },
+    { "company name": "WOZILA",
+        "image": "images/pexels-zanbs-37267437.jpg",
+        "address": "123 Main Street, Nevada, USA",
+        "phone": "(555) 546-4567",
+        "URL": "https://www.wozila.com",
+        "membership level": "2=silver"
+    },
+    { "company name": "SILVER TECH",
+        "image": "images/pexels-the-six-2148199655-32377741.jpg",
+        "address": "123 Main Street, New York, USA",
+        "phone": "(555) 903-4567",
+        "email": "info@SILVERTECH.com",
+        "membership level": "3=gold"
+    }
+  ]
+}

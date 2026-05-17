@@ -1,0 +1,155 @@
+header {
+     background-color: black;
+    color: white;
+    padding: 2rem;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#hamburger {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+#menu {
+    display: none;
+    /*flex-direction: column;*/
+    gap: 1rem;
+}
+
+#menu.show {
+    display: flex;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.7rem;  
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 1rem;    
+}
+
+/*increasing size of span element*/
+span { font-size: 1.5em; }
+
+h2 {
+    background-color: black;
+    color: white;
+    font-size: 1.5rem;
+    margin-top: 0rem;
+}
+
+.profile  {
+    background-color: grey;
+    color: white;
+    margin-top: 1rem;
+}
+
+.photo {
+     background-color: grey;
+    color: white;
+    margin-top: 1rem;
+}
+
+.weather-icons {
+   font-size: 2.7em;
+}
+
+.divide {
+    display: flex;
+    
+}
+
+.skills {
+    background-color:gray;
+    color: white;
+    margin-top: 1rem;
+}
+.welcome {
+   
+    margin: auto;
+    padding: 1rem;
+
+    display: grid;
+    gap: 1rem; 
+    grid-template-columns: 3.5fr 1fr 1fr; 
+}
+
+footer {
+    background-color: darkgray;
+    color: white;
+    padding: 1rem;
+    margin-top: 1.rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+#courses {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1rem;
+    margin-top: 1rem;
+    
+    max-width: 750px;
+}
+
+.card {
+    background-color: #d3d3d3;
+    border-radius: 10px;
+    padding: 1rem;
+    text-align: center;
+    left: 2%;
+    /* max-width: 1200px; */
+}
+
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.badge {
+    display: inline-block;
+    margin-top: 0.4rem;
+    padding: 0.3rem 0.8rem;
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+}
+
+
+@media  (max-width: 700px) {
+  
+    .welcome {
+        grid-template-columns: 1fr; 
+    }   
+    #hamburger {
+        display: block;
+    }
+    nav a {
+        display: block;
+        
+    }
+    footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}
+@media  (min-width: 701px) {
+    #hamburger {
+        display: none;
+    }
+    
+}
