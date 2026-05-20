@@ -19,7 +19,7 @@ async function getMembers() {
         const response = await fetch(jsonURL);
         if (response.ok) {
             const data = await response.json();
-            // Since your JSON wraps everything inside a "companies" key:
+            // Since JSON wraps everything inside a "companies" key:
             displayMembers(data.companies); 
         } else {
             console.error("Failed to fetch member data. Status:", response.status);
