@@ -103,14 +103,22 @@ footer {
     gap: 1rem;
 }
 
+/* GRID VIEW */
+/*#courses.grid-view {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1rem;
+    margin-top: 1rem;
 
+}*/
 
-#courses.list-view {
+/* LIST VIEW */
+/*#courses.list-view {
     display: flex;
     flex-direction: column;
     gap: 1rem;
     margin-top: 1rem;
-}
+}*/
 
 
 .card {
@@ -129,7 +137,6 @@ footer {
 }
 
 /* GRID VIEW */
-
 #courses.grid-view {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -137,7 +144,6 @@ footer {
 }
 
 /* LIST VIEW */
-
 #courses.list-view {
     display: flex;
     flex-direction: column;
