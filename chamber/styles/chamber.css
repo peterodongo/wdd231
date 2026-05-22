@@ -155,6 +155,7 @@ footer {
     grid-template-columns: 1fr;
     text-align: left;
     padding: 1rem;
+    gap: 0.01rem;
 }
 
 /* REMOVE IMAGES IN LIST VIEW */
@@ -240,6 +241,25 @@ footer {
     .welcome {
         grid-template-columns: 1fr;
     }
+
+    .home-grid {
+    grid-template-columns: 1fr;
+    }
+
+    .hero img {
+        height: 350px;
+    }
+
+    .hero-text {
+        left: 5%;
+        right: 5%;
+
+        padding: 1rem;
+    }
+
+    .hero-text h1 {
+        font-size: 1.8rem;
+    }
 }
 
 
@@ -254,4 +274,130 @@ footer {
         flex-direction: row;
         gap: 2rem;
     }
+}
+
+
+/* ---------------- HERO SECTION ---------------- */
+
+.hero {
+    position: relative;
+}
+
+.hero img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    display: block;
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translateY(-50%);
+
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+
+    padding: 2rem;
+    border-radius: 10px;
+
+    max-width: 500px;
+}
+
+.hero-text h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero-text p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+}
+
+
+/* ---------------- CTA BUTTON ---------------- */
+
+.cta-button {
+    display: inline-block;
+
+    background-color: gold;
+    color: black;
+
+    padding: 0.8rem 1.5rem;
+
+    text-decoration: none;
+    font-weight: bold;
+
+    border-radius: 8px;
+
+    transition: 0.3s;
+}
+
+.cta-button:hover {
+    background-color: orange;
+}
+
+
+/* ---------------- HOME GRID ---------------- */
+
+.home-grid {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 1rem;
+
+    padding: 1rem;
+}
+
+
+/* ---------------- EVENTS & WEATHER ---------------- */
+
+.events,
+.weather {
+    background-color: lightgray;
+
+    padding: 1rem;
+
+    border-radius: 10px;
+}
+
+.events h2,
+.weather h2 {
+    margin-top: 0;
+}
+
+
+/* ---------------- SPOTLIGHTS ---------------- */
+
+.spotlights {
+    padding: 1rem;
+}
+
+#spotlight-container {
+    display: grid;
+
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+
+    gap: 1rem;
+}
+
+.spotlight-card {
+    background-color: #d3d3d3;
+
+    padding: 1rem;
+
+    border-radius: 10px;
+
+    text-align: center;
+}
+
+.spotlight-card img {
+    width: 100%;
+    height: 180px;
+
+    object-fit: cover;
+
+    border-radius: 8px;
 }
