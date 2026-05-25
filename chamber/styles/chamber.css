@@ -39,11 +39,7 @@ nav a.active {
     border-radius: 5px;
 }
 
-.hero img {
-    width: 100%;
-    height: auto;
-    margin-bottom: 1rem;    
-}
+
 
 /*increasing size of span element*/
 span { font-size: 1.5em; }
