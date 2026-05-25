@@ -344,7 +344,7 @@ footer {
 .home-grid {
     display: grid;
 
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));;
 
     gap: 1rem;
 
@@ -366,6 +366,17 @@ footer {
 .events h2,
 .weather h2 {
     margin-top: 0;
+}
+
+.forecast-card {
+
+    background-color: lightgray;
+
+    padding: 1rem;
+
+    border-radius: 10px;
+
+    min-height: 220px;
 }
 
 
