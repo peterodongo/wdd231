@@ -192,11 +192,12 @@ footer {
 
     display: grid;
 
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
 
     gap: 1rem;
 
     padding: 1rem;
+
 }
 
 
@@ -214,9 +215,10 @@ footer {
         flex-direction: row;
     }
 
-    /* TWO COLUMN LAYOUT */
-    main {
-        grid-template-columns: 2fr 1fr;
+
+    /* THREE COLUMN LAYOUT */
+    .home-grid {
+        grid-template-columns: repeat(3, 1fr);
     }
 }
 
@@ -344,6 +346,15 @@ footer {
 #weather-info {
 
     text-align: center;
+}
+
+.forecast-card {
+
+    background-color: red;
+
+    padding: 1rem;
+
+    border-radius: 10px;
 }
 
 #weather-info img {
