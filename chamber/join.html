@@ -40,146 +40,150 @@
 
             <div class="join-layout">
 
-            <form method="get" action="thankyou.html">
+                <form method="get" action="thankyou.html">
 
-                <!-- form fields go here -->
-
-                <label>
-                    First Name
-                    <input
-                        type="text"
-                        name="firstName"
-                        required
-                        placeholder="Peter"
-                        title="Enter your first name"
-                        autocomplete="given-name">
-                </label>
-
-                <label>
-                    Last Name
-                    <input
-                        type="text"
-                        name="lastName"
-                        required
-                        placeholder="Odongo"
-                        title="Enter your last name"
-                        autocomplete="family-name">
-                </label>
-
-                <label>Organizational Title
-                    <input 
-                        type="text" 
-                        name="orgTitle" 
-                        title="Enter your position within your organization" 
-                        placeholder="e.g., Manager, CEO"
-                        autocomplete="organization-title" 
-                        pattern="[A-Za-z -]{7,}">
-                </label>
-
-                <label>
-                    Business / Organization Name
-                    <input
-                            type="text"
-                            name="organization"
-                            required
-                            title="Enter the name of your business"
-                            placeholder="e.g., Peter's Bakery"
-                            autocomplete="organization">
-                    </label>
-
-                <label>
-                    Email
-                    <input 
-                        type="email" 
-                        name="email" 
-                        required
-                        placeholder="peter@example.com"
-                        title="Enter your email address"    
-                        autocomplete="email">
-                </label>
-
-                <label>
-                    Contact Phone
-                    <input 
-                        type="tel" 
-                        name="phone" 
-                        required
-                        placeholder="5551234567"
-                        title="Enter your contact phone number"
-                        autocomplete="tel">
-                </label>
-
-                <section class="membership-selection">
-
-                <!-- membership cards go here -->
-                    <fieldset>
-    
-                            <legend>Select Membership Level</legend>
-
-                            <label>
-                                <input type="radio" name="membership" value="np">
-                                NP Membership
-                            </label>
-
-                            <label>
-                                <input type="radio" name="membership" value="bronze">
-                                Bronze Membership
-                            </label>
-
-                            <label>
-                                <input type="radio" name="membership" value="silver">
-                                Silver Membership
-                            </label>
-
-                            <label>
-                                <input type="radio" name="membership" value="gold">
-                                Gold Membership
-                            </label>
-
-                    </fieldset>    
+                    <!-- form fields go here -->
 
                     <label>
-                            Business Description
-                            <textarea
-                                name="description"
-                                title="Describe your business">
-                            </textarea>
-                     </label>
+                        First Name
+                        <input
+                            type="text"
+                            name="firstName"
+                            required
+                            placeholder="Peter"
+                            title="Enter your first name"
+                            autocomplete="given-name">
+                    </label>
+
+                    <label>
+                        Last Name
+                        <input
+                            type="text"
+                            name="lastName"
+                            required
+                            placeholder="Odongo"
+                            title="Enter your last name"
+                            autocomplete="family-name">
+                    </label>
+
+                    <label>Organizational Title
+                        <input 
+                            type="text" 
+                            name="orgTitle" 
+                            title="Enter your position within your organization" 
+                            placeholder="e.g., Manager, CEO"
+                            autocomplete="organization-title" 
+                            pattern="[A-Za-z -]{7,}">
+                    </label>
+
+                    <label>
+                        Business / Organization Name
+                        <input
+                                type="text"
+                                name="organization"
+                                required
+                                title="Enter the name of your business"
+                                placeholder="e.g., Peter's Bakery"
+                                autocomplete="organization">
+                        </label>
+
+                    <label>
+                        Email
+                        <input 
+                            type="email" 
+                            name="email" 
+                            required
+                            placeholder="peter@example.com"
+                            title="Enter your email address"    
+                            autocomplete="email">
+                    </label>
+
+                    <label>
+                        Contact Phone
+                        <input 
+                            type="tel" 
+                            name="phone" 
+                            required
+                            placeholder="5551234567"
+                            title="Enter your contact phone number"
+                            autocomplete="tel">
+                    </label>
+
+                    <section class="membership-selection">
+
+                    <!-- membership cards go here -->
+                        <fieldset>
+        
+                                <legend>Select Membership Level</legend>
+
+                                <label>
+                                    <input type="radio" name="membership" value="np">
+                                    NP Membership
+                                </label>
+
+                                <label>
+                                    <input type="radio" name="membership" value="bronze">
+                                    Bronze Membership
+                                </label>
+
+                                <label>
+                                    <input type="radio" name="membership" value="silver">
+                                    Silver Membership
+                                </label>
+
+                                <label>
+                                    <input type="radio" name="membership" value="gold">
+                                    Gold Membership
+                                </label>
+
+                        </fieldset>    
+
+                        <label>
+                                Business Description
+                                <textarea
+                                    name="description"
+                                    title="Describe your business">
+                                </textarea>
+                        </label>
 
 
-                    <input type="hidden" id="timestamp" name="timestamp">
+                        <input type="hidden" id="timestamp" name="timestamp">
 
+
+                    </section>
+
+                    <button type="submit">Submit</button>
+
+                </form>
+
+                
+
+            <!-- MEMBERSHIP CARDS SIDE -->
+                <section class="membership-cards">
+
+                    <div class="card">
+                        <h2>NP Membership</h2>
+                        <a href="#" id="open-np">View Benefits</a>
+                    </div>
+
+                    <div class="card">
+                        <h2>Bronze Membership</h2>
+                        <a href="#" id="open-bronze">View Benefits</a>
+                    </div>
+
+                    <div class="card">
+                        <h2>Silver Membership</h2>
+                        <a href="#" id="open-silver">View Benefits</a>
+                    </div>
+
+                    <div class="card">
+                        <h2>Gold Membership</h2>
+                        <a href="#" id="open-gold">View Benefits</a>
+                    </div>
 
                 </section>
 
-                <button type="submit">Submit</button>
-
-            </form>
-
-            <!-- MEMBERSHIP CARDS SIDE -->
-        <section class="membership-cards">
-
-            <div class="card">
-                <h2>NP Membership</h2>
-                <a href="#" id="open-np">View Benefits</a>
             </div>
-
-            <div class="card">
-                <h2>Bronze Membership</h2>
-                <a href="#" id="open-bronze">View Benefits</a>
-            </div>
-
-            <div class="card">
-                <h2>Silver Membership</h2>
-                <a href="#" id="open-silver">View Benefits</a>
-            </div>
-
-            <div class="card">
-                <h2>Gold Membership</h2>
-                <a href="#" id="open-gold">View Benefits</a>
-            </div>
-
-        </section>
 
             
            <!---- <dialog id="np-modal">
@@ -237,7 +241,7 @@
     <footer>
         <section class="contact">
         <h3>Peter Chamber of Commerce</h3>
-        <p>123 Main Street, Anytown, USA</p>
+        <p>123 Dain Street, Anytown, USA</p>
         <p>Email: peter.odongo@byu.edu</p>
         <p>Phone: (555) 123-4567</p>
         </section>
