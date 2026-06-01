@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>WDD 231 - chamber Directory - Peter Odongo</title>
+    <meta name="description" content="This is the home page for WDD 231 that shows a work site for a chamber directory. The page includes sect a list of companies.">
+    <meta name="author" content="Peter Odongo">
+    <!-- <link rel="stylesheet" href="styles/tread.css"> -->
+    <link rel="icon" href="favicon.ico">
+    <!--<link rel="stylesheet" href="styles/chamber.css">-->
+     <link rel="stylesheet" href="styles/join.css">
+     <script src="scripts/chamber.js" defer></script>
+    <link rel="stylesheet" href="styles/chamber.css">
+    <script src="scripts/chamber.js" defer></script> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <meta property="og:title" content="Peter Chamber of Commerce for Local Business Directory and Community Hub">
+    <meta property="og:description" content="Official chamber of commerce website showcasing local businesses, events, and community information.">
+    <meta property="og:image" content="https://peterodongo.github.io/wdd231/chamber/images/pexels-mwaurakenj.jpg">
+    <meta property="og:url" content="https://peterodongo.github.io/wdd231/chamber/">
+    <meta property="og:type" content="website">
+</head>
+<body>
+    <header>
+        <span id="name">PETER ODONGO</span> 
+        <button id="hamburger">☰</button> 
+        <nav id="menu">
+            <a href="index.html">Home</a>
+            <a href="directory.html">Directory</a>
+            <a href="join.html" class="active">Join</a>
+        </nav>
+    </header>
+
+    <main>
+            <section class="title">
+                <h1>One World Chamber</h1>
+            </section>
+
+            <div class="join-layout">
+
+            <form method="get" action="thankyou.html">
+
+                <!-- form fields go here -->
+
+                <label>
+                    First Name
+                    <input
+                        type="text"
+                        name="firstName"
+                        required
+                        placeholder="Peter"
+                        title="Enter your first name"
+                        autocomplete="given-name">
+                </label>
+
+                <label>
+                    Last Name
+                    <input
+                        type="text"
+                        name="lastName"
+                        required
+                        placeholder="Odongo"
+                        title="Enter your last name"
+                        autocomplete="family-name">
+                </label>
+
+                <label>Organizational Title
+                    <input 
+                        type="text" 
+                        name="orgTitle" 
+                        title="Enter your position within your organization" 
+                        placeholder="e.g., Manager, CEO"
+                        autocomplete="organization-title" 
+                        pattern="[A-Za-z -]{7,}">
+                </label>
+
+                <label>
+                    Business / Organization Name
+                    <input
+                            type="text"
+                            name="organization"
+                            required
+                            title="Enter the name of your business"
+                            placeholder="e.g., Peter's Bakery"
+                            autocomplete="organization">
+                    </label>
+
+                <label>
+                    Email
+                    <input 
+                        type="email" 
+                        name="email" 
+                        required
+                        placeholder="peter@example.com"
+                        title="Enter your email address"    
+                        autocomplete="email">
+                </label>
+
+                <label>
+                    Contact Phone
+                    <input 
+                        type="tel" 
+                        name="phone" 
+                        required
+                        placeholder="5551234567"
+                        title="Enter your contact phone number"
+                        autocomplete="tel">
+                </label>
+
+                <section class="membership-selection">
+
+                <!-- membership cards go here -->
+                    <fieldset>
+    
+                            <legend>Select Membership Level</legend>
+
+                            <label>
+                                <input type="radio" name="membership" value="np">
+                                NP Membership
+                            </label>
+
+                            <label>
+                                <input type="radio" name="membership" value="bronze">
+                                Bronze Membership
+                            </label>
+
+                            <label>
+                                <input type="radio" name="membership" value="silver">
+                                Silver Membership
+                            </label>
+
+                            <label>
+                                <input type="radio" name="membership" value="gold">
+                                Gold Membership
+                            </label>
+
+                    </fieldset>    
+
+                    <label>
+                            Business Description
+                            <textarea
+                                name="description"
+                                title="Describe your business">
+                            </textarea>
+                     </label>
+
+
+                    <input type="hidden" id="timestamp" name="timestamp">
+
+
+                </section>
+
+                <button type="submit">Submit</button>
+
+            </form>
+
+            <!-- MEMBERSHIP CARDS SIDE -->
+        <section class="membership-cards">
+
+            <div class="card">
+                <h2>NP Membership</h2>
+                <a href="#" id="open-np">View Benefits</a>
+            </div>
+
+            <div class="card">
+                <h2>Bronze Membership</h2>
+                <a href="#" id="open-bronze">View Benefits</a>
+            </div>
+
+            <div class="card">
+                <h2>Silver Membership</h2>
+                <a href="#" id="open-silver">View Benefits</a>
+            </div>
+
+            <div class="card">
+                <h2>Gold Membership</h2>
+                <a href="#" id="open-gold">View Benefits</a>
+            </div>
+
+        </section>
+
+            
+           <!---- <dialog id="np-modal">
+                <h2>NP Membership Benefits</h2>
+                <p>Free membership for nonprofit organizations.</p>
+                <button id="close-np">Close</button>
+            </dialog>-->
+
+
+            <!-- MODALS -->
+
+        <dialog id="np-modal">
+            <h2>NP Membership Benefits</h2>
+            <ul>
+                <li>No membership fee</li>
+                <li>Directory listing</li>
+                <li>Networking opportunities</li>
+            </ul>
+            <button id="close-np">Close</button>
+        </dialog>
+
+        <dialog id="bronze-modal">
+            <h2>Bronze Membership Benefits</h2>
+            <ul>
+                <li>Everything in NP</li>
+                <li>Event discounts</li>
+                <li>Basic advertising</li>
+            </ul>
+            <button id="close-bronze">Close</button>
+        </dialog>
+
+        <dialog id="silver-modal">
+            <h2>Silver Membership Benefits</h2>
+            <ul>
+                <li>Everything in Bronze</li>
+                <li>Training workshops</li>
+                <li>Enhanced advertising</li>
+            </ul>
+            <button id="close-silver">Close</button>
+        </dialog>
+
+        <dialog id="gold-modal">
+            <h2>Gold Membership Benefits</h2>
+            <ul>
+                <li>Everything in Silver</li>
+                <li>Homepage spotlight</li>
+                <li>Premium promotion</li>
+            </ul>
+            <button id="close-gold">Close</button>
+        </dialog>
+
+
+    </main>    
+
+    <footer>
+        <section class="contact">
+        <h3>Peter Chamber of Commerce</h3>
+        <p>123 Main Street, Anytown, USA</p>
+        <p>Email: peter.odongo@byu.edu</p>
+        <p>Phone: (555) 123-4567</p>
+        </section>
+
+
+        <div class="socialmedia">
+            <a href="https://facebook.com">
+                <img src="images/facebook_1216706.png" alt="Facebook Icon">
+            </a>
+            <a href="https://youtube.com">
+                <img src="images/youtubethree.jpg" alt="YouTube Icon">
+            </a>
+            <a href="https://linkedin.com">
+                <img src="images/linkedin_174857.png" alt="linkedin Icon">
+            </a>
+
+            
+        </div>
+
+        <section class="copyright">
+            <p>&copy; 2024 Peter Chamber of Commerce. All rights reserved.</p>
+            <p>©️<span id="currentyear"></span>,     Peter odongo  💠  Nairobi, Kenya</p>
+            <p id="lastModified"></p>
+        </section>
+
+    </footer>            
+</body>
+</html>
