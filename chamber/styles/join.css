@@ -99,16 +99,17 @@ button[type="submit"]:hover {
     gap: 1rem;
 }
 
-.card {
-    /*padding: 1.25rem;*/
+/*.card {
+    padding: 1.25rem;
     border: 1px solid white;
-    /*border-radius: 10px;*/
+    border-radius: 10px;
 
     opacity: 0;
     transform: translateY(30px);
 
     animation: cardFade 0.8s ease forwards;
-}
+}*/
+
 
 /* staggered animation */
 
