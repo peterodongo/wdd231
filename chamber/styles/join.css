@@ -89,7 +89,8 @@ button[type="submit"] {
 }
 
 button[type="submit"]:hover {
-    opacity: .9;
+    opacity: .5;
+    
 }
 
 /* MEMBERSHIP CARDS */
