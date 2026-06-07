@@ -1,0 +1,96 @@
+#discover-cards {
+    display: grid;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.card {
+    display: grid;
+    gap: 0.75rem;
+
+    grid-template-areas:
+        "title"
+        "image"
+        "address"
+        "description"
+        "button";
+
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 1rem;
+}
+
+.card-title {
+    grid-area: title;
+}
+
+.card-image {
+    grid-area: image;
+}
+
+.card-address {
+    grid-area: address;
+}
+
+.card-description {
+    grid-area: description;
+}
+
+.card-button {
+    grid-area: button;
+}
+
+
+@media screen and (min-width: 641px) {
+
+    .card {
+
+        grid-template-columns: 1fr 2fr;
+
+        grid-template-areas:
+            "title title"
+            "image address"
+            "image description"
+            "image button";
+    }
+}
+
+@media screen and (min-width: 1025px) {
+
+    .card {
+
+        grid-template-columns: 1fr 1fr;
+
+        grid-template-areas:
+            "title image"
+            "address image"
+            "description image"
+            "button image";
+    }
+}
+
+.card-image img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    display: block;
+}
+
+@media screen and (min-width: 641px) {
+
+    .card-image img {
+        transition: transform 0.3s ease;
+    }
+
+    .card-image img:hover {
+        transform: scale(1.05);
+    }
+}
+
+#visitor-message {
+    background-color: #f4f4f4;
+    border-left: 4px solid #333;
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 6px;
+}
