@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>WDD 231 - chamber Directory - Peter Odongo</title>
+    <meta name="description" content="This is the home page for WDD 231 that shows a work site for a chamber directory. The page includes sect a list of companies.">
+    <meta name="author" content="Peter Odongo">
+    <!-- <link rel="stylesheet" href="styles/tread.css"> -->
+    <link rel="icon" href="favicon.ico">
+    <!-- <link rel="stylesheet" href="styles/chamber.css"> -->
+    <!-- <link rel="stylesheet" href="styles/chamber.css"> -->
+    <!-- <script src="scripts/chamber.js" defer></script> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <meta property="og:title" content="Peter Chamber of Commerce for Local Business Directory and Community Hub">
+    <meta property="og:description" content="Official chamber of commerce website showcasing local businesses, events, and community information.">
+    <meta property="og:image" content="https://peterodongo.github.io/wdd231/chamber/images/pexels-mwaurakenj.jpg">
+    <meta property="og:url" content="https://peterodongo.github.io/wdd231/chamber/">
+    <meta property="og:type" content="website">
+</head>
+<body>
+    <header>
+        <span id="name">PETER ODONGO</span> 
+        <button id="hamburger">☰</button> 
+        <nav id="menu">
+            <a href="#" class="active">Home</a>   
+            <a href="#">Chamber</a>
+            <a href="#">Final</a> 
+        </nav>
+    </header>
+    <main>
+
+        <form method="get" action="thankyou.html">
+
+                    <!-- form fields -->
+
+                    <label>
+                        Student's First Name
+                        <input
+                            type="text"
+                            name="firstName"
+                            required
+                            placeholder="Peter"
+                            title="Enter your first name"
+                            autocomplete="given-name">
+                    </label>
+
+                    <label>
+                        Student's Last Name
+                        <input
+                            type="text"
+                            name="lastName"
+                            required
+                            placeholder="Odongo"
+                            title="Enter your last name"
+                            autocomplete="family-name">
+                    </label>
+
+                    <label>
+                        Mother's Name
+                        <input 
+                            type="text" 
+                            name="omotherName" 
+                            required
+                            title="Enter your mother's name" 
+                            placeholder="e.g., Jane Doe"
+                            autocomplete="parent's name" 
+                            pattern="[A-Za-z -]{7,}">
+                    </label>
+
+                    <label>
+                        Father's Name
+                        <input
+                                type="text"
+                                name="fatherName"
+                                required
+                                title="Enter your father's name"
+                                placeholder="e.g., John Doe"
+                                autocomplete="parent's name">
+                    </label>
+
+                    <label>
+                        Student's Email
+                        <input 
+                            type="email" 
+                            name="email" 
+                            required
+                            placeholder="peter@example.com"
+                            title="Enter your email address"    
+                            autocomplete="email">
+                    </label>
+
+                    <label>
+                        Student's Contact Phone
+                        <input 
+                            type="tel" 
+                            name="phone" 
+                            required
+                            placeholder="5551234567"
+                            title="Enter your contact phone number"
+                            autocomplete="tel">
+                    </label>
+
+                    <label>
+                        Father's Email
+                        <input 
+                            type="email" 
+                            name="fatherEmail" 
+                            required
+                            placeholder="john@example.com"
+                            title="Enter your father's email address"    
+                            autocomplete="email">
+                    </label>
+
+                    <label>
+                        Father's Contact Phone
+                        <input 
+                            type="tel" 
+                            name="fatherPhone" 
+                            required
+                            placeholder="5551234567"
+                            title="Enter your father's  contact phone number"
+                            autocomplete="tel">
+                    </label>
+
+                    <label>
+                        Mother's Email
+                        <input 
+                            type="email" 
+                            name="motherEmail" 
+                            required
+                            placeholder="jane@example.com"
+                            title="Enter your mother's email address"    
+                            autocomplete="email">
+                    </label>
+
+                    <label>
+                        Mother's Contact Phone
+                        <input 
+                            type="tel" 
+                            name="motherPhone" 
+                            required
+                            placeholder="5551234567"
+                            title="Enter your mother's contact phone number"
+                            autocomplete="tel">
+                    </label>
+
+                    <section class="membership-selection">
+
+                    <!-- membership cards -->
+                        <fieldset>
+        
+                                <legend>Select grade Level</legend>
+
+                                <label>
+                                    <input type="radio" name="membership" value="G1">
+                                    Grade 1
+                                </label>
+
+                                <label>
+                                    <input type="radio" name="membership" value="G2">
+                                    Grade 2
+                                </label>
+
+                                <label>
+                                    <input type="radio" name="membership" value="G3">
+                                    Grade 3
+                                </label>
+
+                                <label>
+                                    <input type="radio" name="membership" value="G4">
+                                    Grade 4
+                                </label>
+
+                        </fieldset>    
+
+                        <input type="hidden" id="timestamp" name="timestamp">
+
+                    </section>
+
+                    <button type="submit">Submit</button>
+        </form>
+
+                <!-- MEMBERSHIP CARDS SIDE -->
+                <section class="membership-cards">
+
+                    <div class="card">
+                        <h2>NP Membership</h2>
+                        <a href="#" id="open-np">View Benefits</a>
+                    </div>
+
+                    <div class="card">
+                        <h2>Bronze Membership</h2>
+                        <a href="#" id="open-bronze">View Benefits</a>
+                    </div>
+
+                    <div class="card">
+                        <h2>Silver Membership</h2>
+                        <a href="#" id="open-silver">View Benefits</a>
+                    </div>
+
+                    <div class="card">
+                        <h2>Gold Membership</h2>
+                        <a href="#" id="open-gold">View Benefits</a>
+                    </div>
+
+                </section>
+
+        <!-- MODALS -->
+        <dialog id="np-modal">
+            <h2>grade1 Benefits</h2>
+            <ul>
+                <li>free computer classes</li>
+                <li>extra tutoring sessions</li>
+                <li>field trips expeditions</li>
+            </ul>
+            <button id="close-np">Close</button>
+        </dialog>
+
+        <dialog id="bronze-modal">
+            <h2>grade2 Benefits</h2>
+            <ul>
+                <li>math tutoring</li>
+                <li>science lab access</li>
+                <li>library resources</li>
+            </ul>
+            <button id="close-bronze">Close</button>
+        </dialog>
+
+        <dialog id="silver-modal">
+            <h2>grade3 Benefits</h2>
+            <ul>
+                <li>advanced courses</li>
+                <li>priority registration</li>
+                <li>personalized learning plans</li>
+            </ul>
+            <button id="close-silver">Close</button>
+        </dialog>
+
+        <dialog id="gold-modal">
+            <h2>grade4 Benefits</h2>
+            <ul>
+                <li>exclusive content</li>
+                <li>access to modern sports facilities</li>
+                <li>dedicated customer support</li>
+            </ul>
+            <button id="close-gold">Close</button>
+        </dialog>
+
+    </main>    
+    <footer>
+        <section class="contact">
+            <h3>ELEARN</h3>
+            <p>123 Main Street, Austin, Texas, USA</p>
+            <p>Email: ELEARN@byu.edu</p>
+            <p>Phone: (555) 123-4567</p>
+        </section>
+
+        <div class="socialmedia">
+            <a href="https://facebook.com">
+                <img src="images/faceone.jpg" alt="Facebook Icon">
+            </a>
+            <a href="https://youtube.com">
+                <img src="images/youone.jpg" alt="YouTube Icon">
+            </a>
+            <a href="https://linkedin.com">
+                <img src="images/linkone.jpg" alt="linkedin Icon">
+            </a>
+            <a href="https://twitter.com">
+                <img src="images/twittone.jpg" alt="Twitter Icon">
+            </a>
+        </div>
+
+        <section class="copyright">
+            <p>&copy; 2024 ELEARN. All rights reserved.</p>
+            <p>©️<span id="currentyear"></span>,     ELEARN  💠  Austin, Texas, USA</p>
+            <p id="lastModified"></p>
+        </section> 
+     </footer>
+</body>
+</html>
