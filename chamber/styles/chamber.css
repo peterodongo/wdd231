@@ -120,17 +120,19 @@ footer {
 .card {
     background-color: #d3d3d3;
     border-radius: 10px;
-    
     text-align: center;
+
+
     
-    padding: 1.35rem;
+    padding: 1.25rem;
     border: 1px solid white;
-    
+    border-radius: 10px;
 
     opacity: 0;
     transform: translateY(30px);
 
     animation: cardFade 0.8s ease forwards;
+    
     
 }
 

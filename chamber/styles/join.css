@@ -101,7 +101,7 @@ button[type="submit"]:hover {
     gap: 1rem;
 }
 
-.card {
+/*.card {
     padding: 1.25rem;
     border: 1px solid white;
     border-radius: 10px;
@@ -110,7 +110,7 @@ button[type="submit"]:hover {
     transform: translateY(30px);
 
     animation: cardFade 0.8s ease forwards; 
-}
+}*/
 
 
 /* staggered animation */
