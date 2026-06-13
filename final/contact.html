@@ -8,7 +8,7 @@
     <meta name="author" content="Peter Odongo">
     <!-- <link rel="stylesheet" href="styles/tread.css"> -->
     <link rel="icon" href="favicon.ico">
-    <!-- <link rel="stylesheet" href="styles/chamber.css"> -->
+    <link rel="stylesheet" href="styles/contact.css">
     <!-- <link rel="stylesheet" href="styles/chamber.css"> -->
     <!-- <script src="scripts/chamber.js" defer></script> -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -32,159 +32,163 @@
     </header>
     <main>
 
-        <form method="get" action="thankyou.html">
+        <h1>Student Registration Form</h1>
 
-                    <!-- form fields -->
+        <div class="join-layout">
+            
+            <form method="get" action="thankyou.html">
 
-                    <label>
-                        Student's First Name
-                        <input
-                            type="text"
-                            name="firstName"
-                            required
-                            placeholder="Peter"
-                            title="Enter your first name"
-                            autocomplete="given-name">
-                    </label>
+                        <!-- form fields -->
 
-                    <label>
-                        Student's Last Name
-                        <input
-                            type="text"
-                            name="lastName"
-                            required
-                            placeholder="Odongo"
-                            title="Enter your last name"
-                            autocomplete="family-name">
-                    </label>
-
-                    <label>
-                        Mother's Name
-                        <input 
-                            type="text" 
-                            name="omotherName" 
-                            required
-                            title="Enter your mother's name" 
-                            placeholder="e.g., Jane Doe"
-                            autocomplete="parent's name" 
-                            pattern="[A-Za-z -]{7,}">
-                    </label>
-
-                    <label>
-                        Father's Name
-                        <input
+                        <label>
+                            Student's First Name
+                            <input
                                 type="text"
-                                name="fatherName"
+                                name="firstName"
                                 required
-                                title="Enter your father's name"
-                                placeholder="e.g., John Doe"
-                                autocomplete="parent's name">
-                    </label>
+                                placeholder="Peter"
+                                title="Enter your first name"
+                                autocomplete="given-name">
+                        </label>
 
-                    <label>
-                        Student's Email
-                        <input 
-                            type="email" 
-                            name="email" 
-                            required
-                            placeholder="peter@example.com"
-                            title="Enter your email address"    
-                            autocomplete="email">
-                    </label>
+                        <label>
+                            Student's Last Name
+                            <input
+                                type="text"
+                                name="lastName"
+                                required
+                                placeholder="Odongo"
+                                title="Enter your last name"
+                                autocomplete="family-name">
+                        </label>
 
-                    <label>
-                        Student's Contact Phone
-                        <input 
-                            type="tel" 
-                            name="phone" 
-                            required
-                            placeholder="5551234567"
-                            title="Enter your contact phone number"
-                            autocomplete="tel">
-                    </label>
+                        <label>
+                            Mother's Name
+                            <input 
+                                type="text" 
+                                name="motherName" 
+                                required
+                                title="Enter your mother's name" 
+                                placeholder="e.g., Jane Doe"
+                                autocomplete="name" 
+                                pattern="[A-Za-z -]{7,}">
+                        </label>
 
-                    <label>
-                        Father's Email
-                        <input 
-                            type="email" 
-                            name="fatherEmail" 
-                            required
-                            placeholder="john@example.com"
-                            title="Enter your father's email address"    
-                            autocomplete="email">
-                    </label>
+                        <label>
+                            Father's Name
+                            <input
+                                    type="text"
+                                    name="fatherName"
+                                    required
+                                    title="Enter your father's name"
+                                    placeholder="e.g., John Doe"
+                                    autocomplete="parent's name">
+                        </label>
 
-                    <label>
-                        Father's Contact Phone
-                        <input 
-                            type="tel" 
-                            name="fatherPhone" 
-                            required
-                            placeholder="5551234567"
-                            title="Enter your father's  contact phone number"
-                            autocomplete="tel">
-                    </label>
+                        <label>
+                            Student's Email
+                            <input 
+                                type="email" 
+                                name="email" 
+                                required
+                                placeholder="peter@example.com"
+                                title="Enter your email address"    
+                                autocomplete="email">
+                        </label>
 
-                    <label>
-                        Mother's Email
-                        <input 
-                            type="email" 
-                            name="motherEmail" 
-                            required
-                            placeholder="jane@example.com"
-                            title="Enter your mother's email address"    
-                            autocomplete="email">
-                    </label>
+                        <label>
+                            Student's Contact Phone
+                            <input 
+                                type="tel" 
+                                name="phone" 
+                                required
+                                placeholder="5551234567"
+                                title="Enter your contact phone number"
+                                autocomplete="tel">
+                        </label>
 
-                    <label>
-                        Mother's Contact Phone
-                        <input 
-                            type="tel" 
-                            name="motherPhone" 
-                            required
-                            placeholder="5551234567"
-                            title="Enter your mother's contact phone number"
-                            autocomplete="tel">
-                    </label>
+                        <label>
+                            Father's Email
+                            <input 
+                                type="email" 
+                                name="fatherEmail" 
+                                required
+                                placeholder="john@example.com"
+                                title="Enter your father's email address"    
+                                autocomplete="email">
+                        </label>
 
-                    <section class="membership-selection">
+                        <label>
+                            Father's Contact Phone
+                            <input 
+                                type="tel" 
+                                name="fatherPhone" 
+                                required
+                                placeholder="5551234567"
+                                title="Enter your father's  contact phone number"
+                                autocomplete="tel">
+                        </label>
 
-                    <!-- membership cards -->
-                        <fieldset>
-        
-                                <legend>Select grade Level</legend>
+                        <label>
+                            Mother's Email
+                            <input 
+                                type="email" 
+                                name="motherEmail" 
+                                required
+                                placeholder="jane@example.com"
+                                title="Enter your mother's email address"    
+                                autocomplete="email">
+                        </label>
 
-                                <label>
-                                    <input type="radio" name="membership" value="G1">
-                                    Grade 1
-                                </label>
+                        <label>
+                            Mother's Contact Phone
+                            <input 
+                                type="tel" 
+                                name="motherPhone" 
+                                required
+                                placeholder="5551234567"
+                                title="Enter your mother's contact phone number"
+                                autocomplete="tel">
+                        </label>
 
-                                <label>
-                                    <input type="radio" name="membership" value="G2">
-                                    Grade 2
-                                </label>
+                        <section class="membership-selection">
 
-                                <label>
-                                    <input type="radio" name="membership" value="G3">
-                                    Grade 3
-                                </label>
+                        <!-- membership cards -->
+                            <fieldset>
+            
+                                    <legend>Select grade Level</legend>
 
-                                <label>
-                                    <input type="radio" name="membership" value="G4">
-                                    Grade 4
-                                </label>
+                                    <label>
+                                        <input type="radio" name="membership" value="G1">
+                                        Grade 1
+                                    </label>
 
-                        </fieldset>    
+                                    <label>
+                                        <input type="radio" name="membership" value="G2">
+                                        Grade 2
+                                    </label>
 
-                        <input type="hidden" id="timestamp" name="timestamp">
+                                    <label>
+                                        <input type="radio" name="membership" value="G3">
+                                        Grade 3
+                                    </label>
 
-                    </section>
+                                    <label>
+                                        <input type="radio" name="membership" value="G4">
+                                        Grade 4
+                                    </label>
 
-                    <button type="submit">Submit</button>
-        </form>
+                            </fieldset>    
 
-                <!-- MEMBERSHIP CARDS SIDE -->
-                <section class="membership-cards">
+                            <input type="hidden" id="timestamp" name="timestamp">
+
+                        </section>
+
+                        <button type="submit">Submit</button>
+            </form>
+
+                    <!-- MEMBERSHIP CARDS SIDE -->
+            <section class="membership-cards">
 
                     <div class="card">
                         <h2>NP Membership</h2>
@@ -206,8 +210,9 @@
                         <a href="#" id="open-gold">View Benefits</a>
                     </div>
 
-                </section>
+            </section>
 
+        </div>
         <!-- MODALS -->
         <dialog id="np-modal">
             <h2>grade1 Benefits</h2>
