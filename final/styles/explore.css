@@ -140,12 +140,22 @@ main h2 {
 .card-button {
     grid-area: button;
 
-    padding: 0.75rem;
-    border: none;
-    background-color: black;
+    background-color: #000;
     color: white;
-    border-radius: 5px;
+
+    border: none;
+    border-radius: 6px;
+
+    padding: .8rem 1rem;
+
     cursor: pointer;
+
+    font-size: 1rem;
+    font-weight: 600;
+
+    transition:
+        background-color .3s,
+        transform .2s;
 }
 
 .card-button:hover {
@@ -163,6 +173,36 @@ main h2 {
     display: block;
 }
 
+
+.card-details {
+    background-color: #f8f9fa;
+    border-left: 4px solid #000;
+    padding: 1rem;
+    margin-top: .5rem;
+
+    line-height: 1.7;
+    color: #444;
+
+    border-radius: 0 8px 8px 0;
+
+    animation: fadeIn .3s ease;
+}
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-8px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
 /*  FOOTER  */
 
 footer {
@@ -175,6 +215,7 @@ footer {
     display: grid;
     grid-template-columns: 1fr;
     gap: 2rem;
+   
 }
 
 .contact,

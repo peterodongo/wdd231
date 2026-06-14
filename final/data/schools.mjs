@@ -3,48 +3,56 @@ export const schools = [
     "name": "Stanford University",
     "address": "450 Serra Mall, Stanford, CA 94305",
     "description": "Prestigious private research university known for innovation, academic excellence, and its proximity to Silicon Valley.",
-    "image": "images/stan.jpg"
+    "image": "images/stan.jpg",
+    "details": "Green Valley Academy serves students from Kindergarten through Grade 12. The school is recognized for its STEM programs, modern learning facilities, competitive sports teams, and strong community engagement initiatives. Students benefit from experienced teachers, technology-enhanced classrooms, and a supportive learning environment designed to prepare them for university and professional careers."
   },
   {
     "name": "University of California, Berkeley",
     "address": "200 California Hall, Berkeley, CA 94720",
     "description": "Top public research university recognized for its academic programs, research contributions, and historic campus.",
-    "image": "images/baker.jpg"
+    "image": "images/baker.jpg",
+    "details": "The University of California, Berkeley is a leading public research university known for its academic excellence, innovative research, and historic campus. It offers a wide range of undergraduate and graduate programs in various fields."
   },
   {
     "name": "University of California, Los Angeles",
     "address": "405 Hilgard Ave, Los Angeles, CA 90095",
     "description": "Leading public university offering a wide range of undergraduate and graduate programs in a vibrant campus environment.",
-    "image": "images/losa.jpg"
+    "image": "images/losa.jpg",
+    "details": "The University of California, Los Angeles is a leading public university known for its academic excellence, innovative research, and vibrant campus life. It offers a wide range of undergraduate and graduate programs in various fields."
   },
   {
     "name": "California Institute of Technology",
     "address": "1200 E California Blvd, Pasadena, CA 91125",
     "description": "World-renowned institution specializing in science, engineering, and technological research.",
-    "image": "images/insti.jpg"
+    "image": "images/insti.jpg",
+    "details": "California Institute of Technology is a world-renowned institution specializing in science, engineering, and technological research. It is known for its rigorous academic programs and groundbreaking discoveries."
   },
   {
     "name": "University of Southern California",
     "address": "3551 Trousdale Pkwy, Los Angeles, CA 90089",
     "description": "Private research university known for its strong programs in business, engineering, film, and medicine.",
-    "image": "images/southern.jpg"
+    "image": "images/southern.jpg",
+    "details": "University of Southern California is a private research university known for its strong programs in business, engineering, film, and medicine. It offers a wide range of undergraduate and graduate programs in various fields."
   },
   {
     "name": "San Diego State University",
     "address": "5500 Campanile Dr, San Diego, CA 92182",
     "description": "Public university offering diverse academic programs and a vibrant student life experience.",
-    "image": "images/diegostate.jpg"
+    "image": "images/diegostate.jpg",
+    "details": "San Diego State University is a public university known for its diverse academic programs and vibrant student life. It offers a wide range of undergraduate and graduate programs in various fields."
   },
   {
     "name": "University of California, San Diego",
     "address": "9500 Gilman Dr, La Jolla, CA 92093",
     "description": "Research-focused public university known for excellence in science, engineering, and healthcare studies.",
-    "image": "images/diegouni.jpg"
+    "image": "images/diegouni.jpg",
+    "details": "University of California, San Diego is a research-focused public university known for its excellence in science, engineering, and healthcare studies. It offers a wide range of undergraduate and graduate programs in various fields."
   },
   {
     "name": "California State University, Long Beach",
     "address": "1250 Bellflower Blvd, Long Beach, CA 90840",
     "description": "Large public university offering comprehensive academic programs and a diverse student community.",
-    "image": "images/beach.jpg"
+    "image": "images/beach.jpg",
+    "details": "California State University, Long Beach is a large public university known for its comprehensive academic programs and diverse student community. It offers a wide range of undergraduate and graduate programs in various fields."
   }
 ];

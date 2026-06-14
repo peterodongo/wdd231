@@ -34,12 +34,35 @@ schools.forEach(school => {
     button.classList.add("card-button");
     button.textContent = "Learn More";
 
+    const details = document.createElement("p");
+    details.classList.add("card-details");
+    details.textContent = school.details;
+    details.hidden = true;
+
+    //button.addEventListener("click", () => {
+      //  details.hidden = !details.hidden;
+    //});
+
+
+    button.addEventListener("click", () => {
+
+    if (details.hidden) {
+        details.hidden = false;
+        button.textContent = "Show Less";
+    } else {
+        details.hidden = true;
+        button.textContent = "Learn More";
+    }
+
+});
+
     card.append(
         title,
         figure,
         address,
         description,
-        button
+        button,
+        details
     );
 
     container.appendChild(card);
