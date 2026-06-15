@@ -8,11 +8,7 @@ hamburger.addEventListener("click", () => {
     menu.classList.toggle("show");
 
     // Change icon when menu opens/closes
-    if (menu.classList.contains("show")) {
-        hamburger.textContent = "✖";
-    } else {
-        hamburger.textContent = "☰";
-    }
+    hamburger.textContent = menu.classList.contains("show") ? "☰" : "X";
 });
 
 // ------------------------------

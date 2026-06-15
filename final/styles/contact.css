@@ -32,6 +32,7 @@ header {
 }
 
 #hamburger {
+    display: block;
     background: none;
     border: none;
     color: white;
@@ -60,6 +61,16 @@ nav a:hover {
 #menu a.active {
     background-color: white;
     color: black;
+}
+
+
+
+#menu.show {
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    margin-top: 0;
+    gap: 2rem;
 }
 
 
@@ -288,6 +299,12 @@ dialog::backdrop {
     nav a {
         padding: 0.5rem 1rem;
     }
+
+    footer {
+        grid-template-columns: 1fr 1fr 1fr;
+        align-items: center;
+        text-align: left;
+    }
 }
 
 
@@ -336,13 +353,10 @@ h2 {
 footer {
     background-color: black;
     color: white;
-
-    margin-top: 3rem;
-    padding: 2rem;
-
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
+    display: grid;
+    gap: 1.5rem;
+    padding: 2rem 1rem;
+    text-align: center;
 }
 
 

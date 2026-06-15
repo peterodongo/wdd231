@@ -215,14 +215,10 @@ main h2 {
 footer {
     background-color: black;
     color: white;
-
-    margin-top: 3rem;
-    padding: 2rem;
-
     display: grid;
-    grid-template-columns: 1fr;
-    gap: 2rem;
-   
+    gap: 1.5rem;
+    padding: 2rem 1rem;
+    text-align: center;
 }
 
 .contact,
@@ -303,5 +299,11 @@ footer {
             "address image"
             "description image"
             "button image";
+    }
+
+    footer {
+        grid-template-columns: 1fr 1fr 1fr;
+        align-items: center;
+        text-align: left;
     }
 }
