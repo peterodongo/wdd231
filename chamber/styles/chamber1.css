@@ -339,4 +339,66 @@ footer {
     height: 180px;
     object-fit: cover;
     border-radius: 8px;
+}/* HEADER */
+
+
+
+/* HAMBURGER */
+
+#hamburger {
+    background: none;
+    border: none;
+    color: #ffffff;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+/* NAVIGATION */
+
+#menu {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 1rem;
+}
+
+#menu.show {
+    display: flex;
+}
+
+#menu a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: .75rem;
+    border-radius: 5px;
+}
+
+#menu a:hover {
+    background-color: rgb(60, 60, 60);
+}
+
+#menu a.active {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+/* DESKTOP VIEW */
+
+@media screen and (min-width: 768px) {
+
+    #hamburger {
+        display: none;
+    }
+
+    #menu {
+        display: flex;
+        flex-direction: row;
+        width: auto;
+        margin-top: 0;
+        gap: 1rem;
+    }
+
+    #menu a {
+        padding: .5rem 1rem;
+    }
 }
