@@ -55,9 +55,8 @@
             "image button";
     }
 
-    #menu.show {
-    display: flex;
-}
+   
+
 }
 
 @media screen and (min-width: 1025px) {
