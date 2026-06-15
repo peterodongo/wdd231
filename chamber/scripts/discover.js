@@ -1,13 +1,12 @@
 //port { attractions } from "../data/attractions.mjs";
 
-//nst hamburger = document.querySelector("#hamburger");
-//nst navMenu = document.querySelector("#nav-menu");
+const hamburger = document.querySelector("#hamburger");
+const navMenu = document.querySelector("#menu");
 
-//mburger.addEventListener("click", () => {
-  //navMenu.classList.toggle("show");
-  //hamburger.textContent = navMenu.classList.contains("show") ? "X" : "☰";
- //}); 
-
+hamburger.addEventListener("click", () => {
+  navMenu.classList.toggle("show");
+  hamburger.textContent = navMenu.classList.contains("show") ? "X" : "☰";
+}); 
 
 
 /* build cards */
