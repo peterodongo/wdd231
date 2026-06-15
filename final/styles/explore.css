@@ -50,6 +50,13 @@ header {
     display: flex;
 }
 
+
+#menu a:hover,
+#menu a.active {
+    background-color: white;
+    color: black;
+}
+
 nav a {
     color: white;
     text-decoration: none;

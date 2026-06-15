@@ -39,17 +39,9 @@ header {
     cursor: pointer;
 }
 
-#menu {
-    display: none;
-    ;
-    flex-direction: column;
-    width: 100%;
-    margin-top: 1rem;
-}
 
-#menu.show {
-    display: flex;
-}
+
+
 
 nav a {
     color: white;
@@ -64,6 +56,11 @@ nav a:hover {
     border-radius: 5px;
 }
 
+#menu a:hover,
+#menu a.active {
+    background-color: white;
+    color: black;
+}
 
 
 
@@ -273,6 +270,23 @@ dialog::backdrop {
     .membership-cards {
         position: sticky;
         top: 1rem;
+    }
+
+
+    #hamburger {
+        display: none;
+    }
+
+    #menu {
+        display: flex;
+        flex-direction: row;
+        width: auto;
+        margin-top: 0;
+        gap: 2rem;
+    }
+
+    nav a {
+        padding: 0.5rem 1rem;
     }
 }
 
