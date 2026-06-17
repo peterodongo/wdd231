@@ -1,4 +1,5 @@
-export const schools = [
+{
+  "schools" : [
   {
     "name": "Stanford University",
     "address": "450 Serra Mall, Stanford, CA 94305",
@@ -55,4 +56,5 @@ export const schools = [
     "image": "images/beach.jpg",
     "details": "California State University, Long Beach is a large public university known for its comprehensive academic programs and diverse student community. It offers a wide range of undergraduate and graduate programs in various fields."
   }
-];
+]
+}

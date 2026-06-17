@@ -17,7 +17,7 @@ img {
     display: block;
 }
 
-/* ---------- HEADER ---------- */
+/*  HEADER  */
 header {
     background-color: black;
     color: white;
@@ -42,7 +42,7 @@ header {
     cursor: pointer;
 }
 
-/* ---------- NAVIGATION ---------- */
+/*  NAVIGATION  */
 #menu {
     display: grid;
     grid-template-columns: 1fr;
@@ -58,6 +58,7 @@ header {
     text-decoration: none;
     padding: 1rem;
     border-top: 1px solid rgba(255,255,255,0.2);
+    border-radius: 0.6rem;
     text-align: center;
     transition: background-color 0.3s;
 }
@@ -73,7 +74,7 @@ header {
     display: flex;
 }
 
-/* ---------- HERO SECTION ---------- */
+/*  HERO SECTION  */
 .hero {
     width: 100%;
     height: auto;
@@ -86,7 +87,7 @@ header {
     object-fit: cover;
 }
 
-/* ---------- MAIN CONTENT ---------- */
+/*  MAIN CONTENT  */
 main {
     max-width: 1200px;
     margin: 0 auto;
@@ -113,7 +114,7 @@ h1 {
     font-size: 1.05rem;
 }
 
-/* ---------- FOOTER ---------- */
+/*  FOOTER  */
 footer {
     background-color: black;
     color: white;
@@ -133,7 +134,7 @@ footer {
     margin: 0.3rem 0;
 }
 
-/* ---------- SOCIAL MEDIA ---------- */
+/*  SOCIAL MEDIA  */
 .socialmedia {
     display: flex;
     justify-content: center;
@@ -151,7 +152,7 @@ footer {
     transform: scale(1.15);
 }
 
-/* ---------- DESKTOP VIEW ---------- */
+/*  DESKTOP VIEW  */
 @media screen and (min-width: 768px) {
 
     #hamburger {
